@@ -6,7 +6,7 @@ export default function Header() {
     <header className={`header-container ${isDark ? "dark" : ""}`}>
       <div className="header-content">
         <h2 className="title">
-          <a href="/">Where in the world?</a>
+          <a href="/">Explore the World</a>
         </h2>
         <p
           className="theme-changer"
