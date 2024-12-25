@@ -4,7 +4,7 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html && npm run postbuild",
-    "postbuild": "copyfiles -u 1 _redirects dist/"
+    "postbuild": "copyfiles _redirects dist/"
   },
   "keywords": [],
   "author": "",
