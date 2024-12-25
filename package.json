@@ -4,7 +4,7 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html && npm run postbuild",
-    "postbuild": "copy _redirects dist\\"
+    "postbuild": "copyfiles -u 1 _redirects dist/"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "react-router": "^7.1.1"
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "parcel": "^2.13.3",
     "process": "^0.11.10"
   }
