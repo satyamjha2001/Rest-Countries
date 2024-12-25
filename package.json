@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html && npm run postbuild",
+    "postbuild": "copy _redirects dist\\"
   },
   "keywords": [],
   "author": "",
