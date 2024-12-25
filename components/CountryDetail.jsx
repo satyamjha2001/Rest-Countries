@@ -43,7 +43,7 @@ export default function CountryDetail() {
 
     Promise.all(
       data.borders.map((border) => {
-        return fetch(`https://restcountries.com/v2/alpha/${border}`)
+        return fetch(`https://restcountries.com/v3.1/alpha/${border}`)
           .then((res) => res.json())
           .then(([borderCountry]) => borderCountry.name.common);
       })
@@ -57,7 +57,7 @@ export default function CountryDetail() {
       return;
     }
 
-    fetch(`https://restcountries.com/v2/name/${countryName}?fullText=true`)
+    fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
       .then((res) => res.json())
       .then(([data]) => {
         // console.log(data);
