@@ -21,7 +21,7 @@ export default function CountriesList({ query, selectedRegion }) {
     setCurrentPage(1);
   }, [query, selectedRegion]);
 // console.log("Selected Region:", selectedRegion);
-console.log("Regions in data:", countriesData.map((country) => country.region));
+// console.log("Regions in data:", countriesData.map((country) => country.region));
 
   const filteredCountries = countriesData.filter(
     (country) =>
