@@ -8,7 +8,7 @@ export default function Pagination({
 }) {
     //   const pages = [];
      const totalPages = Math.ceil(totalCountries / countriesPerPage);
-     const maxPageNumbersToShow = 5; // Number of page buttons to display
+     const maxPageNumbersToShow = 3; // Number of page buttons to display
 
      // Calculate the range of page numbers to display
      const startPage = Math.max(
